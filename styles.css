@@ -1,0 +1,234 @@
+html{
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Cinzel", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(136, 90, 69);
+}
+
+body{
+    height: 100vh;
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2118;
+
+    background-image:
+        repeating-linear-gradient(
+        90deg,
+        #4a3628 0px,
+        #4a3628 28px,  
+        #3a281d 28px,
+        #3a281d 32px   
+        );
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Welcome {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: rgb(26, 10, 3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+#app {
+    font-size: 1.3rem;
+    width: 40%;
+    border-radius: 8px;
+    padding: 20px 20px;
+    background-color: rgb(26, 10, 3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#upper-section {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.window {
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(180deg, #0a1e3b 0%, #12294f 100%);
+  border: 3px solid #1e3a70;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(18, 41, 79, 0.8);
+  position: relative;
+}
+
+
+.window.moon::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle at 20% 20%, #fffde7, #f5e1a4);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgba(245, 225, 164, 0.6);
+}
+
+#creature-info {
+    width: 80%;
+}
+
+#lower-section {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#table {
+    width: 100vw;
+    height: 200px;
+    border-collapse: collapse;
+    background-color: #3a281d;
+
+}
+
+#objects {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.group {
+  display: flex;
+  gap: 0px;
+}
+
+#books {
+  width: 270px;
+  height: 180px;
+  background-image: url('/img/book.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#potion {
+  width: 70px;
+  height: 100px;
+  background-image: url('/img/potion.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 20px;
+}
+
+#skull {
+  width: 128px;
+  height: 150px;
+  background-image: url('/img/skull.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+}
+
+#candle {
+  width: 116px;
+  height: 150px;
+  background-image: url('/img/candle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#beer {
+  width: 200px;
+  height: 200px;
+  background-image: url('/img/beer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid #200802;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgb(54, 21, 6);
+    color: rgb(177, 117, 90)
+}
+
+button {
+    background: #5f3d1d;
+    color: rgb(136, 90, 69);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background: #7a4f25;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#creature-info td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #4a3628;
+}
+
+#creature-info td.label {
+  font-weight: 700;
+  color: #bb9f6a;
+  width: 25%;
+  white-space: nowrap;
+}
+
+#creature-info td[id] {
+  width: 25%;
+  text-align: right;
+  font-weight: 500;
+  color: #e6d8a8;
+}
+
+#creature-info tr:hover td {
+  background-color: rgba(187, 159, 106, 0.15);
+  cursor: default;
+}
+
+#types span {
+    margin-right: 6px;
+}

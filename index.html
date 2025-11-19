@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPG Creature Search App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="Welcome">
+            <h1>Welcome to the Crossroad Tavern</h1>
+            <h2>Your gateway to discovering RPG creatures!</h2>
+        </div>
+        <div id="upper-section">
+            <div class="window moon">
+
+            </div>
+
+            <div id="app">
+                <h2>Find Your Creature</h2>
+                <label for ="search-input">Search for a creature:</label>
+                <input type="text" id="search-input" required>
+                <button id="search-button">Search</button>
+                <table id="creature-info">
+                    <tbody>
+                        <tr>
+                        <td class="label">Name:</td>
+                        <td id="creature-name">0</td>
+
+                        <td class="label">Attack:</td>
+                        <td id="attack">0</td>
+                        </tr>
+
+                        <tr>
+                        <td class="label">ID:</td>
+                        <td id="creature-id">0</td>
+
+                        <td class="label">Defense:</td>
+                        <td id="defense">0</td>
+                        </tr>
+
+                        <tr>
+                        <td class="label">Weight:</td>
+                        <td id="weight">0</td>
+
+                        <td class="label">Special Attack:</td>
+                        <td id="special-attack">0</td>
+                        </tr>
+
+                        <tr>
+                        <td class="label">Height:</td>
+                        <td id="height">0</td>
+
+                        <td class="label">Special Defense:</td>
+                        <td id="special-defense">0</td>
+                        </tr>
+
+                        <tr>
+                        <td class="label">Type:</td>
+                        <td id="types">0</td>
+
+                        <td class="label">Speed:</td>
+                        <td id="speed">0</td>
+                        </tr>
+
+                        <tr>
+                            <td class="label">HP:</td>
+                            <td id="hp">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="window">
+                
+            </div>
+        </div>
+        <div id="lower-section">
+            <div id="table">
+                <div id="objects">
+                    <div class="group left-group">
+                        <div id="books"></div>
+                        <div id="skull"></div>
+                        <div id="potion"></div>
+                    </div>
+                    <div></div>
+                    <div class="group right-group">
+                        <div id="candle"></div>
+                        <div id="beer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
